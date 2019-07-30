@@ -139,124 +139,79 @@ export default {
   data() {
     return {
       // 独家精准计划图片
-      logo: require("@/assets/image/login-header-logo.png"),
+      logo: "",
       // 微信扫码免费领精准计划图片
-      title_pic: require("@/assets/image/m-login-header.png"),
+      title_pic: "",
       // 微信二维码
-      code: require("@/assets/image/code.png"),
+      code: "",
       // 添加为微信好友gif图
-      code_gif: require("@/assets/image/code.gif"),
+      code_gif: "",
       // 关注699计划图
-      follow_pic: require("@/assets/image/haochu.png"),
+      follow_pic: "",
       // 左右滑动的轮播图数据
-      swipeArr: [
-        {
-          img: require("@/assets/image/you01.jpg"),
-          title: "各类计划即时大数据走势分析",
-          main:
-            "即时大数据走势分析，提供人工计划，计划师通过大数据分析帮你期分析数据，涉及多种方式，如定位、双面。"
-        },
-        {
-          img: require("@/assets/image/you02.jpg"),
-          title: "专业计划师1对1全面精心指导",
-          main:
-            "每位计划师都是通过平台精心筛选出来，计划师的计划准确率都是8-9成以上，他们的计划都是根据过往开奖走势，为你分析每一个走势和计划结果。"
-        },
-        {
-          img: require("@/assets/image/you03.jpg"),
-          title: "100多名精准计划师任你挑选",
-          main:
-            "有上百名计划师，并有计划实时排名，准确分析每位计划师长期的准确性统计及排名，通过全面的数据分析，帮你找到你想要的计划师。 "
-        },
-        {
-          img: require("@/assets/image/you04.jpg"),
-          title: "免费看类精准计划数据分析报表",
-          main:
-            "平台还提供广大玩家试玩，让计划运用到实际中上，这也是验证计划师们准确率最直接的方法，也能实现的报表数据。"
-        },
-        {
-          img: require("@/assets/image/you05.jpg"),
-          title: "稳定计划实时精准排名分析",
-          main:
-            "稳定的计划把控，分析每个计划的概率，每个计划师都会确保会员稳定，系统记录每个计划师的计划排名数据。"
-        }
-      ],
+      swipeArr: [],
       // 699计划团队给玩家的一段话
-      c_title: "699计划团队给玩家的一段话",
+      c_title: "",
       // 699计划团队给玩家的一段话内容
-      cMain: [
-        "您好！我是曾老师，整个团队100多名计划师做计划已经有5年多的时间了，经也是负债几百万到现在生活无忧，很多人认为开奖是一种运气成份没有规律，但你们错了，同样也有一套相应规律与算法，当然我们699团队根本也没有百分百准确结果。",
-        "我们通过大数据、历史多项数据、模拟试机、多态模型等一系列操作得出一套稳定赢利规律，还是有些人刚接触存在怀疑，其实这也是很正常，你加我的微信看我们团队发的每期计划用再去判断，我们计划绝对免费不收任何费用的，如果准确率高你才和我们一起合作，没有准备率你当观看一下免费计划。",
-        "曾老师最后给你们的一句话：怀疑+拒绝=一无所有、怀疑+考察+验证=创造机会、机会是为有心人准备的，大家合作共赢！"
-      ],
+      cMain: [],
       // 计划师实时排名
-      c_title_two: "计划师实时排名",
+      c_title_two: "",
       // 计划师实时排名背景图片
-      cMainTwoPic: require("@/assets/image/login-game-sort.jpg"),
+      cMainTwoPic: "",
       // 计划师实时排名内容
-      cMainTwo: [
-        [
-          "【计划师】落枫村 准确率95.23%",
-          "【计划师】陌上 准确率93.52%",
-          "【计划师】土豆不抬头 准确率92.13%",
-          "【计划师】水凝墨  准确率90.95%",
-          "【计划师】冰蓝色的雪 准确率90.55%",
-          "【计划师】毒师铭  准确率89.21%",
-          "【计划师】琉璃紫月 准确率89.02%",
-          "【计划师】缺點诗意 准确率88.99%"
-        ],
-        [
-          "【计划师】月明追云影 准确率88.48%",
-          "【计划师】眼泪不为伱留 准确率88.25%",
-          "【计划师】狼行成双 准确率87.88%",
-          "【计划师】沐予风吟 准确率87.52%",
-          "【计划师】雾风寒狼 准确率87.50%",
-          "【计划师】吴春生 准确率86.88%",
-          "【计划师】博雅轩 准确率86.78%",
-          "【计划师】閑人到人间 准确率86.57%"
-        ]
-      ],
+      cMainTwo: [],
       // 金牌导师计划
-      c_title_three: "金牌导师计划",
+      c_title_three: "",
       // 金牌导师背景图片
-      cMainThreePic: require("@/assets/image/youting.jpg"),
+      cMainThreePic: "",
       // 金牌导师内容
-      cMainThree: [
-        "45-46期1位1245678——期各100+297",
-        "46-47期2位2347890——期各120+653",
-        "47-48期3位2356790——期各140+958",
-        "49-50期5位2386960——期各270+597",
-        "50-51期7位3545678——期各800+997",
-        "52-53期8位9645678——期各650+897",
-        "53-54期9位7545678——期各560+337",
-        "54-55期0位4545678——期各490+797"
-      ],
+      cMainThree: [],
       // 全天人工计划
-      c_title_four: "全天人工计划",
+      c_title_four: "",
       // 全天人工计划背景图片
-      cMainFourPic: require("@/assets/image/feichuang.jpg"),
+      cMainFourPic: "",
       // 全天人工计划内容
-      cMainFour: [
-        "05-06期 0名下 【35678】 中",
-        "06-07期 5名下 【35678】 中",
-        "07-08期 5名下 【35678】 中",
-        "08-09期 1名下 【35678】 中",
-        "09-10期 8名下 【35678】 中",
-        "10-11期 8名下 【35678】 中",
-        "12-13期 9名下 【23490】 中",
-        "14-15期 1名下 【57890】 中"
-      ],
+      cMainFour: [],
       // 微信名
-      code_name: "GD34684",
+      code_name: "",
       // 查看盈利排名
-      gif_name: require("@/assets/image/ylbtn.gif"),
+      gif_name: "",
       // 累计计划量
-      planNum: "7777",
+      planNum: "",
       // 在线计划师
-      onlineNum: "186",
+      onlineNum: "",
       // QQ号
-      qq: "3005765800"
+      qq: ""
     };
+  },
+  created() {
+    this.axios.get("https://easy-mock.com/mock/5d3fb0107d8eb213715bb105/example/mock").then(res => {
+      if (res.status == 200) {
+        let obj = res.data.data;
+        this.logo = obj.logo;
+        this.title_pic = obj.title_pic;
+        this.code = obj.code;
+        this.code_gif = obj.code_gif;
+        this.follow_pic = obj.follow_pic;
+        this.swipeArr = obj.swipeArr;
+        this.c_title = obj.c_title;
+        this.cMain = obj.cMain;
+        this.c_title_two = obj.c_title_two;
+        this.cMainTwoPic = obj.cMainTwoPic;
+        this.cMainTwo = obj.cMainTwo;
+        this.c_title_three = obj.c_title_three;
+        this.cMainThreePic = obj.cMainThreePic;
+        this.cMainThree = obj.cMainThree;
+        this.c_title_four = obj.c_title_four;
+        this.cMainFourPic = obj.cMainFourPic;
+        this.cMainFour = obj.cMainFour;
+        this.code_name = obj.code_name;
+        this.gif_name = obj.gif_name;
+        this.planNum = obj.planNum;
+        this.onlineNum = obj.onlineNum;
+        this.qq = obj.qq;
+      }
+    })
   },
   methods: {
     // 跳转微信
